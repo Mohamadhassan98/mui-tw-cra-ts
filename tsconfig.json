@@ -1,24 +1,48 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
+      "esnext",
+      "ES6"
     ],
+    "paths": {
+      "@api/*": ["services/api/*"],
+      "@api": ["services/api"],
+      "@constant/*": ["services/constant/*"],
+      "@context/*": ["services/context/*"],
+      "@elements/*": ["components/elements/*"],
+      "@hook/*": ["services/hook/*"],
+      "@layouts/*": ["components/layouts/*"],
+      "@modules/*": ["components/modules/*"],
+      "@util/*": ["services/util/*"],
+      "@component/*": ["services/component/*"],
+      "@HOC/*": ["services/HOC/*"],
+      "@schema/*": ["services/schema/*"],
+      "@schema": ["services/schema"]
+    },
     "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
+    "baseUrl": "./src",
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
     "module": "esnext",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUncheckedIndexedAccess": true,
+    "pretty": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true
   },
   "include": [
     "src"

@@ -1,0 +1,54 @@
+import {EditCreateRegistrationServiceModalProps} from "@modules/Modals/commercial-services/RegistrationServices/EditCreateRegistrationServiceModal";
+import {DeleteConfirmModalProps} from "@modules/Modals/DeleteConfirmModal";
+import {UploadImageModalProps} from "@modules/Modals/UploadImageModal";
+import {AddBranchModalProps} from "@modules/Modals/AddBranchModal";
+import {IFilterJobSearchModalProps} from "@modules/Modals/FilterJobSearchModal";
+import {AddJobSearchModalProps} from "@modules/Modals/JobSearchModal";
+import {EducationalBackgroundProps} from "@modules/Modals/EducationalBackgroundModal";
+import {FilterCompaniesProps} from "@modules/Modals/FilterCompaniesModal";
+import {RejectCompanyModalProps} from "@modules/Modals/RejectCompanyModal";
+import {AcceptCompanyModalProps} from "@modules/Modals/AcceptCompanyModal";
+import {IAcceptConfirmModalProps} from "@modules/Modals/AcceptConfirmModal";
+import {IRejectConfirmModalProps} from "@modules/Modals/RejectConfirmModal";
+import {AddProductModalProps} from "@modules/Modals/AddProductModal";
+import {FilterProductsCompanyViewModalProps} from "@modules/Modals/FilterProductsCompanyViewModal";
+import {AcceptProductModalProps} from "@modules/Modals/AcceptProductModal";
+import {RejectProductModalProps} from "@modules/Modals/RejectProductModal";
+import {FilterProductsAdminViewModalProps} from "@modules/Modals/FilterProductsAdminViewModal";
+import {RepresentativeSalesAgentModalProps} from "@modules/Modals/GrantSalesRepresentativeFormModal";
+import {GetSalesRepresentationFilterModalProps} from "@modules/Modals/commercial-services/GetSalesRepresentation/GetSalesRepresentationModal";
+import {EditCreateGetSalesRepresentationModalProps} from "@modules/Modals/commercial-services/GetSalesRepresentation/EditCreateGetSalesRepresentationModal";
+import {ShowImageModalProps} from "@modules/Modals/ShowImageModal";
+
+export type modalsPayload = {
+  deleteConfirm: DeleteConfirmModalProps;
+  uploadImageInGallery: UploadImageModalProps;
+  uploadImageInHonors: UploadImageModalProps;
+  addBranch: AddBranchModalProps;
+  addJobSearch: AddJobSearchModalProps;
+  filterJobAdsList: IFilterJobSearchModalProps;
+  editJobSearch: AddJobSearchModalProps;
+  addEducationalBackground: EducationalBackgroundProps;
+  userAppliesFilterModal: {};
+  companyAdvertisementsFilterModal: {};
+  adminPanelAdvertisementsFilterModal: {};
+  filterCompanies: FilterCompaniesProps;
+  rejectCompany: RejectCompanyModalProps;
+  acceptCompany: AcceptCompanyModalProps;
+  acceptConfirm: IAcceptConfirmModalProps;
+  rejectConfirm: IRejectConfirmModalProps;
+  addProduct: AddProductModalProps;
+  filterProductsCompanyView: FilterProductsCompanyViewModalProps;
+  acceptProduct: AcceptProductModalProps;
+  rejectProduct: RejectProductModalProps;
+  filterProductsAdminView: FilterProductsAdminViewModalProps;
+  showImage: ShowImageModalProps;
+
+  getSalesRepresentation: GetSalesRepresentationFilterModalProps;
+  createGetSalesRepresentationModal: EditCreateGetSalesRepresentationModalProps;
+  editGetSalesRepresentationModal: EditCreateGetSalesRepresentationModalProps;
+
+  representativeSalesAgentModal: RepresentativeSalesAgentModalProps;
+  registrationServicesFilter: {};
+  editCreateRegistration: EditCreateRegistrationServiceModalProps;
+};
