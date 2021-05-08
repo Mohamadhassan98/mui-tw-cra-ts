@@ -1,4 +1,4 @@
-const {theme} = require("./src/services/constants/theme.ts");
+const {theme} = require("./src/services/constant/theme.js");
 
 const _ = require("lodash");
 

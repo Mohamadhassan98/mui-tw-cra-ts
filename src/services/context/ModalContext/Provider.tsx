@@ -1,5 +1,5 @@
 import React from "react";
-import {ModalDispatchContext, ModalStateContext, ModalStateContextSchema} from "services/context/ModalContext/index";
+import {ModalDispatchContext, ModalStateContext, ModalStateContextSchema} from "@context/ModalContext";
 
 export function ModalProvider({children}: React.PropsWithChildren<unknown>) {
   const [activeModal, setActiveModal] = React.useState<ModalStateContextSchema | null>(null);

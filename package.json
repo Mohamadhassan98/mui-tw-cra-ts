@@ -7,12 +7,12 @@
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
-    "@storybook/addon-docs": "^6.2.9",
     "@tailwindcss/postcss7-compat": "^2.1.2",
-    "autoprefixer": "^10.2.5",
+    "autoprefixer": "^9.8.6",
     "axios": "^0.21.1",
-    "babel-loader": "^8.2.2",
+    "babel-loader": "8.1.0",
     "clsx": "^1.1.1",
+    "craco-alias": "^2.3.0",
     "history": "^4.9.0",
     "jss-rtl": "^0.3.0",
     "lodash": "^4.17.21",
@@ -28,6 +28,7 @@
   "devDependencies": {
     "@openapitools/openapi-generator-cli": "^2.2.6",
     "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-docs": "^6.2.9",
     "@storybook/addon-essentials": "^6.2.9",
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-knobs": "^6.2.9",
@@ -62,6 +63,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
+    "postcss": "^7.0.35",
     "prettier": "^2.2.1",
     "typescript": "^4.2.4"
   },
@@ -74,7 +76,7 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "serve-storybook": "serve -s storybook-static",
-    "chromatic": "npx chromatic --project-token yourtoken",
+    "chromatic": "npx chromatic --project-token=yourtoken",
     "introspect": "openapi-generator-cli generate"
   },
   "husky": {

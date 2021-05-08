@@ -8,9 +8,12 @@
         "generatorName": "typescript-axios",
         "output": "#{cwd}/src/services/schema",
         "inputSpec": "https://your-server.com.here/api/swagger/?format=openapi",
+        "apiPackage": "serverapi",
+        "modelPackage": "servermodel",
         "additionalProperties": {
           "supportsES6": "true",
-          "useSingleRequestParameter" : true
+          "useSingleRequestParameter" : true,
+          "withSeparateModelsAndApi": true
         },
         "skipValidateSpec": true
       }

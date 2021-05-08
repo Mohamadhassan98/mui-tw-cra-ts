@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@api/*": ["services/api/*"],
+      "@api": ["services/api"],
+      "@constant/*": ["services/constant/*"],
+      "@context/*": ["services/context/*"],
+      "@elements/*": ["components/elements/*"],
+      "@hook/*": ["services/hook/*"],
+      "@layouts/*": ["components/layouts/*"],
+      "@modules/*": ["components/modules/*"],
+      "@util/*": ["services/util/*"],
+      "@component/*": ["services/component/*"],
+      "@HOC/*": ["services/HOC/*"],
+      "@schema/*": ["services/schema/*"],
+      "@schema": ["services/schema"]
+    }
+  }
+}
